@@ -4,7 +4,7 @@ import "./Time.css";
 const Time = (props) => {
   return (
     // Outra opçao para chamar o props
-    // const css = backgroundColor: props.corSecundaria
+    // const css = {backgroundColor: props.corSecundaria}
 
     props.colaboradores.length > 0 && (
       <section
@@ -15,6 +15,8 @@ const Time = (props) => {
         <div className="colaboradores">
           {props.colaboradores.map((colaborador) => (
             <Colaborador
+              corDeFundo={props.corPrimaria}
+              key={colaborador.nome}
               nome={colaborador.nome}
               cargo={colaborador.cargo}
               imagem={colaborador.imagem}

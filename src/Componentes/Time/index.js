@@ -9,7 +9,10 @@ const Time = (props) => {
     props.colaboradores.length > 0 && (
       <section
         className="time"
-        style={{ backgroundColor: props.corSecundaria }}
+        style={{
+          backgroundColor: props.corSecundaria,
+          backgroundImage: "url(/images/fundo.png)",
+        }}
       >
         <h3 style={{ borderColor: props.corPrimaria }}>{props.nome}</h3>
         <div className="colaboradores">

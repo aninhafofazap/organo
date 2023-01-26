@@ -18,6 +18,9 @@ const Rodape = () => {
         </ul>
       </section>
       <section>
+        <img src="/images/logo.png" alt="" />
+      </section>
+      <section>
         <p>Desenvolvido por Ana Victória.</p>
       </section>
     </footer>
